@@ -40,3 +40,7 @@ No.
 ### Can I use this for other formats?
 
 Possibly! I haven't tested it with anything besides Historic Brawl
+
+### When should I run this script?
+
+Run every time after closing MTGA on your computer. The `Player.log` file is deleted the next time you start the Arena app, so data will be lost if you do not regularly run the script after ending your session.
