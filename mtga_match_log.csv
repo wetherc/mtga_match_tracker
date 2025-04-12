@@ -1,43 +1,49 @@
 game_id,timestamp,deck_name,opponent,game_won,game_result_reason,player_commander,opponent_commander
-aa143f8b-07df-4faa-8487-0b7f037a07a1,2025-04-11 23:07:16.410,You've Got Gnomes,Sebacdc,False,ResultReason_Game,"Anim Pakal, Thousandth Moon","Gonti, Night Minister"
+44a5900c-9464-43a8-8867-094d1e80d230,2025-04-12 10:07:24.786,Tasha's Hideous Laughter,Neros,False,ResultReason_Game,"Alesha, Who Laughs at Fate","Giada, Font of Hope"
+b82684c8-b91a-4710-9768-f05acc017fa7,2025-04-12 10:27:44.903,Tasha's Hideous Laughter,MasterOfWaves,False,ResultReason_Game,"Alesha, Who Laughs at Fate","Jace, the Perfected Mind"
+7e7242c8-6079-48a9-9d59-a869ff66e45f,2025-04-12 10:34:07.053,Tasha's Hideous Laughter,matt,True,ResultReason_Concede,"Alesha, Who Laughs at Fate",95708
+fe56dfe9-132a-48d2-ab9d-f3a6dbc401a2,2025-04-12 10:41:42.086,Tasha's Hideous Laughter,terrotsuyoi,True,ResultReason_Concede,"Alesha, Who Laughs at Fate",95726
+9750eba6-bdf2-4929-bc8d-d2a46b19aa01,2025-04-12 10:49:03.244,Tasha's Hideous Laughter,ChippingCone,False,ResultReason_Game,"Alesha, Who Laughs at Fate","Roxanne, Starfall Savant"
+23a2630f-ab8a-4e3f-b26d-6f86cce18d0b,2025-04-12 10:53:59.583,Tasha's Hideous Laughter,Grizman,True,ResultReason_Concede,"Alesha, Who Laughs at Fate",95734
 ab7ee533-0c45-444d-a860-8226634c6b03,2025-04-10 18:43:24.729,You've Got Gnomes,Manu,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Golos, Tireless Pilgrim"
 061d0488-9bc2-43c1-adc5-01f302226d89,2025-04-10 18:50:17.574,You've Got Gnomes,BelbY,False,ResultReason_Game,"Anim Pakal, Thousandth Moon",95526
-557e65f0-8fd4-482c-9cc5-840f62fb730f,2025-04-10 18:53:43.641,You've Got Gnomes,awaKT,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon",75213
+557e65f0-8fd4-482c-9cc5-840f62fb730f,2025-04-10 18:53:43.641,You've Got Gnomes,awaKT,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Esika, God of the Tree // The Prismatic Bridge"
 c7ffbbb9-6a5d-4b8c-83d4-2899693032d1,2025-04-10 19:05:47.721,You've Got Gnomes,echelon,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Golos, Tireless Pilgrim"
 69f3b4a6-a7c7-45b0-9066-7a4a350e5b15,2025-04-10 19:13:31.202,You've Got Gnomes,frozenace,False,ResultReason_Concede,"Anim Pakal, Thousandth Moon",95516
 a9a6dfae-e553-478d-8906-7189ba000177,2025-04-10 19:18:34.650,You've Got Gnomes,ZenoGod,False,ResultReason_Game,"Anim Pakal, Thousandth Moon","Eluge, the Shoreless Sea"
 29d84834-fe8a-4b4d-b92e-c18b30553f07,2025-04-10 19:26:40.854,You've Got Gnomes,panda34,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Kinnan, Bonder Prodigy"
-c5f012cf-6c18-41c8-84eb-9f1f70f4026e,2025-04-11 12:15:59.811,You've Got Gnomes,Rye,True,ResultReason_Concede,,
+c5f012cf-6c18-41c8-84eb-9f1f70f4026e,2025-04-11 12:15:59.811,You've Got Gnomes,Rye,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Kinnan, Bonder Prodigy"
 dca45e14-a2a9-48f8-a984-ed731f0d5ad1,2025-04-11 12:25:19.480,You've Got Gnomes,Chimi Chang,False,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Prosper, Tome-Bound"
 a50c7cea-76bc-46ce-877c-35572c8a935b,2025-04-11 12:30:01.889,You've Got Gnomes,dubblebroker,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Omnath, Locus of the Roil"
 61e2dd85-9622-418e-baf5-1ed0467fbcc0,2025-04-11 12:36:30.290,You've Got Gnomes,bluffhealer,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Ragavan, Nimble Pilferer"
 bf5d383f-82c1-46b2-bb18-22a56e6a8888,2025-04-11 12:44:16.312,You've Got Gnomes,Mr.Crocodile,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon",95706
 2749af95-4ac8-435e-ae0d-100a91fb479f,2025-04-11 12:48:44.662,You've Got Gnomes,BThaler,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Fynn, the Fangbearer"
-d8379082-660e-46ca-be95-fbfe6a7d647a,2025-04-11 17:20:41.431,You've Got Gnomes,Tux,True,ResultReason_Game,,
+d8379082-660e-46ca-be95-fbfe6a7d647a,2025-04-11 17:20:41.431,You've Got Gnomes,Tux,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Loot, the Pathfinder"
 f8fbd410-435d-41df-a825-9a312385f0a0,2025-04-11 17:33:56.640,You've Got Gnomes,npg13,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Eluge, the Shoreless Sea"
 b9edaa50-dbb4-41aa-917a-ac96a57da438,2025-04-11 17:38:30.639,You've Got Gnomes,Bonedaddy,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon",95516
 cfb5a7a0-18f0-4e93-8d75-c786b84b2e83,2025-04-11 17:48:40.395,You've Got Gnomes,booya ,False,ResultReason_Game,"Anim Pakal, Thousandth Moon","Atraxa, Praetors' Voice"
 c7901b61-a960-42cb-bf1a-1e54d681d008,2025-04-11 17:55:41.810,You've Got Gnomes,Aesop,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Jetmir, Nexus of Revels"
-f1bef1c6-a886-4271-a6a1-1945bc47f252,2025-04-11 18:03:34.046,You've Got Gnomes,Wapakalypse,False,ResultReason_Game,,
+f1bef1c6-a886-4271-a6a1-1945bc47f252,2025-04-11 18:03:34.046,You've Got Gnomes,Wapakalypse,False,ResultReason_Game,"Anim Pakal, Thousandth Moon",Laughing Jasper Flint
 cd641729-0d5d-40b6-bd6d-b1de9b0fa440,2025-04-11 18:14:00.433,You've Got Gnomes,CatsOnPluto,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon",84191
 060a7c53-1ded-48e3-b56b-6ba29d8b9c30,2025-04-11 21:06:28.203,You've Got Gnomes,Doc5,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Roxanne, Starfall Savant"
 50797949-84b0-4a4c-b515-040fcbe063ce,2025-04-11 21:19:40.122,You've Got Gnomes,KingGirth,False,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Atraxa, Praetors' Voice"
 8c3c53eb-5e12-495b-9141-1a28a646712e,2025-04-11 21:23:20.411,You've Got Gnomes,あかさTaNaHa,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Atraxa, Grand Unifier"
 074f5b0c-9958-46d1-9f3c-1941a767d85c,2025-04-11 21:28:10.203,You've Got Gnomes,Shade.BDE,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Imoti, Celebrant of Bounty"
-4e85e775-baf3-40bb-8d31-8fcf9781c8a1,2025-04-11 21:29:47.161,You've Got Gnomes,dhammerliveson,True,ResultReason_Concede,,
+4e85e775-baf3-40bb-8d31-8fcf9781c8a1,2025-04-11 21:29:47.161,You've Got Gnomes,dhammerliveson,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Bristly Bill, Spine Sower"
 79df1b57-cd53-4981-a80d-d0c419c86078,2025-04-11 21:37:14.050,You've Got Gnomes,RUCKUS,False,ResultReason_Game,"Anim Pakal, Thousandth Moon","Kinnan, Bonder Prodigy"
 2ebcd41f-8dbe-4707-80c2-46c9ef761719,2025-04-11 21:41:46.684,You've Got Gnomes,Lugaid,False,ResultReason_Concede,"Anim Pakal, Thousandth Moon",95516
-48f1372e-cd0c-4aff-b30a-f950cfa44eba,2025-04-11 21:44:43.132,You've Got Gnomes,Allred1000,False,ResultReason_Concede,,
+48f1372e-cd0c-4aff-b30a-f950cfa44eba,2025-04-11 21:44:43.132,You've Got Gnomes,Allred1000,False,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Tasha, Unholy Archmage"
 2db616a2-e0c7-4708-9d5b-2b66389955b3,2025-04-11 21:49:43.784,You've Got Gnomes,lord jore,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Narset, Enlightened Master"
-dd0dcc83-4e79-4eec-b56e-ab7533a060cf,2025-04-11 21:59:03.442,You've Got Gnomes,Psillias2,False,ResultReason_Game,,
+dd0dcc83-4e79-4eec-b56e-ab7533a060cf,2025-04-11 21:59:03.442,You've Got Gnomes,Psillias2,False,ResultReason_Game,"Anim Pakal, Thousandth Moon",90302
 ea303158-72f7-4504-be12-c9dbada31e51,2025-04-11 22:00:33.926,You've Got Gnomes,NickGG,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Jadar, Ghoulcaller of Nephalia"
 21eaa7cc-6c94-4e75-806e-20fd8bea26bd,2025-04-11 22:07:15.267,You've Got Gnomes,Twistofrage,False,ResultReason_Game,"Anim Pakal, Thousandth Moon","Tajic, Legion's Valor"
 d0fb79dc-ef70-44a3-a7ac-ed0c7b519b92,2025-04-11 22:11:40.801,You've Got Gnomes,YottoBear,False,ResultReason_Game,"Anim Pakal, Thousandth Moon","Balmor, Battlemage Captain"
 84900222-1dc2-4d26-9d44-bfe28b16f65c,2025-04-11 22:17:19.629,You've Got Gnomes,Leo the Ace,True,ResultReason_Timeout,"Anim Pakal, Thousandth Moon","Etali, Primal Conqueror // Etali, Primal Sickness"
 5bd86741-a79f-40cc-b60d-ee9b460bba79,2025-04-11 22:18:41.197,You've Got Gnomes,Bonedaddy,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon",95516
 d54b28ab-3a68-4dea-b874-e5c24307919b,2025-04-11 22:23:29.995,You've Got Gnomes,Adumbration,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Atraxa, Grand Unifier"
-d2481fa0-2c23-4026-8ae5-15f3a4b2f156,2025-04-11 22:29:51.646,You've Got Gnomes,RJRMTG,False,ResultReason_Game,,
+d2481fa0-2c23-4026-8ae5-15f3a4b2f156,2025-04-11 22:29:51.646,You've Got Gnomes,RJRMTG,False,ResultReason_Game,"Anim Pakal, Thousandth Moon",95706
 f48c6ffa-8969-43b0-a533-d26de6b46e0d,2025-04-11 22:32:44.965,You've Got Gnomes,A Beluga Whale,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Tajic, Legion's Valor"
 4d93cc8d-1448-422c-b9b2-9ef295a10ea4,2025-04-11 22:36:19.838,You've Got Gnomes,...,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Etali, Primal Conqueror // Etali, Primal Sickness"
 19cba288-c645-4e56-a111-c0e0a7611c46,2025-04-11 22:41:52.328,You've Got Gnomes,josealbertooceguera,True,ResultReason_Game,"Anim Pakal, Thousandth Moon","Bonny Pall, Clearcutter"
 80608335-b215-4bd9-bdda-3455c549da06,2025-04-11 22:45:10.744,You've Got Gnomes,Nemo1342,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon",95726
+aa143f8b-07df-4faa-8487-0b7f037a07a1,2025-04-11 23:07:16.410,You've Got Gnomes,Sebacdc,False,ResultReason_Game,"Anim Pakal, Thousandth Moon","Gonti, Night Minister"
