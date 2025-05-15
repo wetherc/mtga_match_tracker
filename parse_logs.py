@@ -11,16 +11,28 @@ import time
 import pandas as pd
 
 
-class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
-    INFO = '\033[96m'
-    SUCCESS = '\033[92m'
-    WARNING = '\033[93m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
+class PrettyPrinter():
+    def __init__(self):
+        self.INFO = '\033[96m'
+        self.SUCCESS = '\033[92m'
+        self.WARNING = '\033[93m'
+        self.FAIL = '\033[91m'
+        self.ENDC = '\033[0m'
+    
+    def print_info(self, message: str) -> None:
+        print(f"ℹ️ {self.INFO} {message}{self.ENDC}")
+    
+    def print_success(self, message: str) -> None:
+        print(f"✅ {self.SUCCESS} {message}{self.ENDC}")
+    
+    def print_warning(self, message: str) -> None:
+        print(f"⚠️ {self.WARNING} {message}{self.ENDC}")
+    
+    def print_fail(self, message: str) -> None:
+        print(f"❌ {self.FAIL} {message}{self.ENDC}")
+
+
+_printer = PrettyPrinter()
 
 
 def load_mtga_logs(base_path: str, appdata_path: str):
@@ -101,7 +113,7 @@ def parse_match_data(deck_data, match_data, player_name) -> pd.DataFrame:
 def get_scryfall_name_from_arena_id(id: int):
     res = requests.get(f"https://api.scryfall.com/cards/arena/{id}")
     if res.status_code != 200:
-        print(f"❌ {bcolors.FAIL} Scryfall returned HTTP {res.status_code} for Arena card ID {id}.{bcolors.ENDC}")
+        _printer.print_fail(f"Scryfall returned HTTP {res.status_code} for Arena card ID {id}")
         return id
     card_data = json.loads(res.text)
     return card_data.get("name", id)
@@ -143,63 +155,69 @@ def get_player_commanders(match_data_row: pd.Series, match_commanders) -> pd.Ser
     default="spantz",
     help="User's MTGA display name")
 def parse_and_save_logs(base_path: str, appdata_path: str, player_name: str):
-    print(f"ℹ️ {bcolors.INFO} Loading session logfile...{bcolors.ENDC}")
-    deck_data, match_data, match_commanders = load_mtga_logs(base_path, appdata_path)
-    print(f"✅ {bcolors.SUCCESS} Loaded deck and match data from session logfile{bcolors.ENDC}")
+    _printer.print_info("Loading session logfile...")
+    try:
+        deck_data, match_data, match_commanders = load_mtga_logs(base_path, appdata_path)
+    except FileNotFoundError:
+        _printer.print_fail(f"Unable to locate MTGA Player.log. Script exiting")
+        sys.exit(1)
+    _printer.print_success("Loaded deck and match data from session logfile")
 
-    print(f"ℹ️ {bcolors.INFO} Validating session match data...{bcolors.ENDC}")
+    _printer.print_info("Validating session match data...")
     try:
         assert len(deck_data) == len(match_data)
-        print(f"✅ {bcolors.SUCCESS} Match data validated{bcolors.ENDC}")
+        _printer.print_success("Match data validated")
     except AssertionError as error:
-        print(f"⚠️ {bcolors.WARNING} Warning{bcolors.ENDC} ⚠️")
-        print(f"Deck logs and match logs are of differing lengths ({len(deck_data)} != {len(match_data)}")
-        print("Please review the parsed output for accuracy")
+        _printer.print_warning("Warning")
+        _printer.print_warning(f"Deck logs and match logs are of differing lengths ({len(deck_data)} != {len(match_data)}")
+        _printer.print_warning("Please review the parsed output for accuracy")
 
-    print(f"ℹ️ {bcolors.INFO} Parsing match details...{bcolors.ENDC}")
+    _printer.print_info("Parsing match details...")
     parsed_matches = parse_match_data(deck_data, match_data, player_name)
-    print(f"✅ {bcolors.SUCCESS} Parsed match details{bcolors.ENDC}")
+    _printer.print_success("Parsed match details")
 
-    print(f"ℹ️ {bcolors.INFO} Downloading commander card information from Scryfall...{bcolors.ENDC}")
+    _printer.print_info("Downloading commander card information from Scryfall...")
     parsed_matches[["player_commander", "opponent_commander"]] = parsed_matches.apply(
         lambda x: get_player_commanders(x, match_commanders),
         axis=1)
-    print(f"✅ {bcolors.SUCCESS} Downloaded commander card information{bcolors.ENDC}")
+    _printer.print_success("Downloaded commander card information")
 
     parsed_matches = parsed_matches.drop(["player_seat", "opponent_seat"], axis=1)
 
     _winrate = round(
         sum(parsed_matches["game_won"]) / parsed_matches.shape[0] * 100,
         0)
-    print(f"✅ {bcolors.SUCCESS} Details for {len(parsed_matches)} matches successfully identified{bcolors.ENDC}")
-    print(f"ℹ️ {bcolors.INFO} Your winrate for this session was {_winrate}%{bcolors.ENDC}")
+    _printer.print_success(f"Details for {len(parsed_matches)} matches successfully identified")
+    _printer.print_info(f"Your winrate for this session was {_winrate}%")
 
-    print(f"ℹ️ {bcolors.INFO} Saving match win/loss data...{bcolors.ENDC}")
-    if os.path.exists("match_history/mtga_match_log.csv"):
+    _printer.print_info("Saving match win/loss data...")
+
+    script_path = os.path.abspath(os.path.dirname(sys.argv[0]))
+    if os.path.exists(f"{script_path}/match_history/mtga_match_log.csv"):
         parsed_matches.to_csv(
-            "match_history/mtga_match_log.csv",
+            f"{script_path}/match_history/mtga_match_log.csv",
             index=False,
             header=False,
             mode="a")
     else:
-        os.makedirs("match_history", exist_ok=True)
+        os.makedirs(f"{script_path}/match_history", exist_ok=True)
         parsed_matches.to_csv(
-            "match_history/mtga_match_log.csv",
+            f"{script_path}/match_history/mtga_match_log.csv",
             index=False,
             header=True,
             mode="w")
 
-    print(f"✅ {bcolors.SUCCESS} Saved matches to match_history/mtga_match_log.csv{bcolors.ENDC}")
+    _printer.print_success("Saved matches to ./match_history/mtga_match_log.csv")
     
     source_path = f"{base_path}/{appdata_path}/Player.log"
     destination_path = f"{base_path}/{appdata_path}/Player_{time.time_ns()}.log"
     # Ensure the source file exists
-    print(f"ℹ️ {bcolors.INFO} Backing up session logfile data...{bcolors.ENDC}")
+    _printer.print_info("Backing up session logfile data...")
     if os.path.exists(source_path):
         shutil.move(source_path, destination_path)
-        print(f"✅ {bcolors.SUCCESS} Session logfile moved from {source_path} to {destination_path}{bcolors.ENDC}")
+        _printer.print_success(f"Session logfile moved from {source_path} to {destination_path}")
     else:
-        print(f"❌ {bcolors.FAIL} Session logfile {source_path} not found.{bcolors.ENDC}")
+        _printer.print_fail(f"Session logfile {source_path} not found.")
 
 
 if __name__ == '__main__':
