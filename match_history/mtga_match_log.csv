@@ -228,7 +228,7 @@ e485b94f-3f6d-4975-bdfd-da5f876619e3,2025-04-30 22:09:20.232,Tasha's Hideous Lau
 4df7263e-00af-48e4-9cc4-902ab669e74f,2025-04-30 22:13:16.736,You've Got Gnomes,BigB1ackDaddy,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Satya, Aetherflux Genius"
 6acaa4ea-6848-44b7-a61b-034302390037,2025-04-30 22:16:29.251,You've Got Gnomes,vchengx,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Halana and Alena, Partners"
 cd827edf-a4ad-4c92-a4da-6241af4e71dc,2025-04-30 22:26:56.795,You've Got Gnomes,pauly.roc,True,ResultReason_Game,"Anim Pakal, Thousandth Moon",84191
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       e08731e1-e543-4cb3-9f9a-f0945def28fc,2025-05-03 09:19:28.899,Huge Tracts of Land,k4z00p4,False,ResultReason_Game,"Tatyova, Benthic Druid","Isshin, Two Heavens as One"
+e08731e1-e543-4cb3-9f9a-f0945def28fc,2025-05-03 09:19:28.899,Huge Tracts of Land,k4z00p4,False,ResultReason_Game,"Tatyova, Benthic Druid","Isshin, Two Heavens as One"
 8c9396e3-a998-4338-8bf1-f6cecbf56472,2025-05-03 09:43:50.386,Huge Tracts of Land,droctagon999,True,ResultReason_Concede,"Tatyova, Benthic Druid","Ugin, Eye of the Storms"
 d1effc34-6738-4a4e-9116-c6adc4e84775,2025-05-03 09:47:47.715,Huge Tracts of Land,rKk,True,ResultReason_Concede,"Tatyova, Benthic Druid",96572
 ccac22a8-40a4-44ea-9429-a42b3032968b,2025-05-03 09:50:51.033,Huge Tracts of Land,Laughingset,True,ResultReason_Concede,"Tatyova, Benthic Druid","Elspeth, Storm Slayer"
@@ -315,3 +315,17 @@ a7990b6b-64ad-444f-86ca-6965d033eb77,2025-05-18 18:10:22.855,You've Got Gnomes,z
 b31cffc5-cce8-49ce-a559-448612726ac0,2025-05-18 18:17:11.472,You've Got Gnomes,LongLuk,False,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Bristly Bill, Spine Sower"
 525299d1-2f15-41b6-96eb-dbe1bea4cab5,2025-05-18 18:21:04.549,You've Got Gnomes,KingChadiilac,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Narset, Enlightened Exile"
 4145945f-7a4a-4514-9278-0822fccf477e,2025-05-18 18:25:04.144,You've Got Gnomes,KING CONAN ,True,ResultReason_Concede,"Anim Pakal, Thousandth Moon","Malcolm, Alluring Scoundrel"
+66252a03-bb4a-47c2-9e38-6b2d176e3055,2025-05-18 20:44:24.825,Roommates with Benefits,Nicol,False,ResultReason_Concede,"Halana and Alena, Partners","Narset, Enlightened Master"
+0678ae23-23ee-4897-9249-8a09aed7b5a8,2025-05-18 20:45:56.266,Roommates with Benefits,Laughterspam,True,ResultReason_Concede,"Halana and Alena, Partners","Ozox, the Clattering King"
+5d33b08b-70aa-4424-89ed-5bfc23f76cbf,2025-05-18 20:55:08.365,Roommates with Benefits,hoopfan187,False,ResultReason_Game,"Halana and Alena, Partners","Sheoldred, the Apocalypse"
+7d1a9b8b-0013-4243-a134-e5cdd01c5e47,2025-05-18 20:59:13.271,Roommates with Benefits,PringleFork,True,ResultReason_Game,"Halana and Alena, Partners","Imoti, Celebrant of Bounty"
+79e0139c-77c5-4c11-a3c5-d09ba343a455,2025-05-18 21:08:36.565,Roommates with Benefits,JaserMage,True,ResultReason_Concede,"Halana and Alena, Partners","Loot, the Pathfinder"
+9b0aff44-96c1-456d-961d-9b5ecf8357ab,2025-05-18 21:10:41.577,Roommates with Benefits,Dracopoullos,True,ResultReason_Concede,"Halana and Alena, Partners","Faramir, Prince of Ithilien"
+d814a959-0e19-4ea9-9fcd-aeb24a859ea1,2025-05-18 21:25:26.816,Roommates with Benefits,Augustin,False,ResultReason_Game,"Halana and Alena, Partners","Azusa, Lost but Seeking"
+4440acdb-ed37-490c-adf9-03a40041b13d,2025-05-18 21:34:10.021,Roommates with Benefits,Jine,True,ResultReason_Game,"Halana and Alena, Partners","Kaito, Bane of Nightmares"
+2e3c1c06-ef8d-464d-a03b-8903815deb31,2025-05-18 21:43:38.918,Roommates with Benefits,Captainathkick,True,ResultReason_Game,"Halana and Alena, Partners",Zurgo and Ojutai
+4c2997de-769a-4118-9de6-51ecb96caac9,2025-05-18 21:48:11.017,Roommates with Benefits,hoops40,True,ResultReason_Concede,"Halana and Alena, Partners","Arahbo, the First Fang"
+60dd9269-2781-4d78-8555-fd5098e4e30e,2025-05-18 21:53:22.759,Roommates with Benefits,Big Boy,True,ResultReason_Game,"Halana and Alena, Partners","The Gitrog, Ravenous Ride"
+d0c9e854-1a3d-4acb-ad68-2d6133d65480,2025-05-18 21:54:44.429,Roommates with Benefits,Blamtnt,True,ResultReason_Concede,"Halana and Alena, Partners",90302
+2ba80fb4-c0a3-4125-8850-28c1fdc127c9,2025-05-18 22:02:26.460,Roommates with Benefits,MFSnacks,False,ResultReason_Concede,"Halana and Alena, Partners","Narset, Enlightened Exile"
+d63fc6ee-face-4e2a-808f-5ada376bc0e3,2025-05-18 22:14:43.077,Roommates with Benefits,Eonian Dark,True,ResultReason_Game,"Halana and Alena, Partners",The Gitrog Monster
